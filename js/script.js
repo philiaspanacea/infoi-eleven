@@ -14,45 +14,45 @@ const typeChart = {
 };
 
 const messages = [
-    {sentence: "Super Effective!"},
-    {sentence: "Not Very Effective..."}, 
-    {sentence: "Effective."}
+    {sentence: "Super Effective!", multiplier: "2x"},
+    {sentence: "Not Very Effective...", multiplier: "0.5x"}, 
+    {sentence: "Effective.", multiplier: "1x"}
 ];
 
 function loadInput(){
     for(const key in typeChart){
-        const ele = document.createElement("option");
-        const ele2 = document.createElement("option");
+        const attack = document.createElement("option");
+        const defense = document.createElement("option");
 
-        ele.setAttribute("strongAgainst", key);
-        ele2.setAttribute("weakAgainst", key)
-        ele.innerHTML = key
-        ele2.innerHTML = key
-        akop.appendChild(ele);
-        dfop.appendChild(ele2)
+        attack.innerHTML = key
+        defense.innerHTML = key
+        
+        akop.appendChild(attack);
+        dfop.appendChild(defense)
+
+        console.log (typeChart[key].strongAgainst);
+        // console.log (typeChart[key].weakAgainst);
+
     }
 }
 
+
 function calcDiff(){
     message.innerHTML = "";
-    console.log(typeChart)
+    if (akop.value === dfop.value)
+        { 
+            console.log("working");
+            message.innerHTML = ("messages");
+        }
+        else {
+            console.log("mismatched")
+            message.innerHTML = ("no messages");
 
-    if (atk === typeChart.value){
-        if (dfn === typeChart.strongAgainst){
-            message.innerHTML = (messages[0]);
         }
-        else if (dfn === typeChart.weakAgainst){
-            message.innerHTML = (messages[1]);
-        }
-        else if (dfn === atk){
-            message.innerHTML = (messages[2]);
-        }
-    }
-
-    }
+    };
 
 loadInput();
 
 confirm.addEventListener("click", function(){
-    calcDiff();
+    calcDiff()
 })
