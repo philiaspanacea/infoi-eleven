@@ -42,11 +42,11 @@ function calcDiff(){
     if (akop.value === dfop.value)
         { 
             console.log("working");
-            message.innerHTML = ("messages");
+            message.innerHTML = ("x1");
         }
         else {
             console.log("mismatched")
-            message.innerHTML = ("no messages");
+            message.innerHTML = ("0.5x");
 
         }
     };
