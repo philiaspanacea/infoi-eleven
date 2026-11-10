@@ -1,5 +1,7 @@
 * {
     margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 body {
@@ -57,6 +59,8 @@ body {
     border-radius: 10px;
     width: 120px;
     height: 40px;
+    font-size: 20px;
+
 }
 
 #confirm button:hover {
@@ -73,7 +77,6 @@ body {
     height: 35px;
     width: 85px;
     font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #input select option {
