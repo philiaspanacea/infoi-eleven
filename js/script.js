@@ -38,6 +38,17 @@ function loadInput(){
 
 function calcDiff(atkn, dfnd){
     message.innerHTML = "";
+    
+    if (typeChart[atkn].strongAgainst.includes(dfnd)){
+        message.innerHTML = ("Super Effective! (x2)");
+    }
+    else if (typeChart[atkn].weakAgainst.includes(dfnd)){
+        message.innerHTML = ("Not Very Effective... (x0.5)");
+    }
+    else {
+        message.innerHTML = ("Effective. (1x)")
+    }
+
     // if (akop.value === dfop.value)
     //     { 
     //         console.log("working");
@@ -48,15 +59,7 @@ function calcDiff(atkn, dfnd){
     //         message.innerHTML = ("0.5x");
 
     //     }
-    if (typeChart[atkn].strongAgainst.includes(dfnd)){
-        message.innerHTML = ("Super Effective! (x2)");
-    }
-    else if (typeChart[atkn].weakAgainst.includes(dfnd)){
-        message.innerHTML = ("Not Very Effective... (x0.5)");
-    }
-    else {
-        message.innerHTML = ("Effective. (1x)")
-    }
+    
 };
 
 calc.addEventListener("click", function(){
