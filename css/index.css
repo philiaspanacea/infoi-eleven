@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(12, 77, 47)
 }
 
@@ -45,14 +45,14 @@ body {
     margin-bottom: 5px;
 }
 
-#confirm {
+#calc {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
 }
 
-#confirm button {
+#calc button {
     background-color: rgb(108, 182, 148);
     color: rgb(12, 77, 47);
     border: 2px solid rgb(29, 116, 75);
@@ -63,7 +63,7 @@ body {
 
 }
 
-#confirm button:hover {
+#calc button:hover {
     background-color: rgb(95, 160, 129);
     color: rgb(193, 243, 221);
 }
