@@ -7,7 +7,7 @@ const dfop = document.querySelector("#dfop");
 
 
 const typeChart = {
-  fire: { strongAgainst: ["grass"], weakAgainst: ["water"] },
+  fire: { strongAgainst: ["grass"], weakAgainst: ["water"] }, // <-- brackets are arrays
   water: { strongAgainst: ["fire"], weakAgainst: ["electric"] },
   electric: { strongAgainst: ["water"], weakAgainst: ["grass"] },
   grass: { strongAgainst: ["electric"], weakAgainst: ["fire"] }
@@ -39,7 +39,7 @@ function loadInput(){
 function calcDiff(atkn, dfnd){
     message.innerHTML = "";
     
-    if (typeChart[atkn].strongAgainst.includes(dfnd)){
+    if (typeChart[atkn].strongAgainst.includes(dfnd)){ // <-- .includes grabs value straight from array
         message.innerHTML = ("Super Effective! (x2)");
     }
     else if (typeChart[atkn].weakAgainst.includes(dfnd)){
