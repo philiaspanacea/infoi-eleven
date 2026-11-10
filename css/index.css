@@ -1,7 +1,9 @@
 * {
     margin: 0 auto;
-        background-color: rgb(196, 226, 212);
+}
 
+body {
+    background-color: rgb(196, 226, 212);
 }
 
 #wrapper {

@@ -24,8 +24,8 @@ const products = [ // <-- ARRAY (brackets)
     }
 ]
 
-function priceConversion(product, currency){
-    console.log(product.price * conversions[currency].value);
+function priceConversion(products, currency){
+    console.log(products.price * conversions[currency].value);
 };
 
 function loadCurrencies(){
